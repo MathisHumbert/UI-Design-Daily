@@ -1,0 +1,160 @@
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ecedf8;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: white;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+h1,
+h3 {
+  font-weight: 500;
+}
+p {
+  font-weight: 100;
+}
+button {
+  font-weight: 300;
+}
+/* header */
+header {
+  margin-bottom: 1rem;
+}
+header h1 {
+  font-size: 1.5rem;
+  color: #222;
+  max-width: 10rem;
+}
+header span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: #ecedf8;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+header span i {
+  color: #222;
+  font-size: 1rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.left h3 {
+  margin-left: 5px;
+  color: #f36597;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.left span {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: hsl(339, 86%, 90%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.left span i {
+  color: #f36597;
+  font-size: 0.75rem;
+}
+footer button {
+  padding: 0.5rem 2.5rem;
+  border-color: transparent;
+  border-radius: 0.25rem;
+  background: linear-gradient(0.25turn, #dc7ecc 30%, #f36597 100%);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* cards */
+.cards {
+  display: grid;
+  gap: 5px;
+}
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  border: 0.5px solid #fff;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.card:hover {
+  border: 0.5px solid hsl(241, 37%, 86%);
+  background: hsl(235, 46%, 98%);
+}
+.card img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.card-info h3 {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card-info p {
+  color: #8b8a9e;
+  font-size: 0.75rem;
+}
+.checked {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .card {
+    grid-template-columns: auto 1fr auto;
+    width: 500px;
+  }
+  .card:hover .checked {
+    display: grid;
+  }
+  .checked {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: #2b2a5c;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #ededed;
+  }
+  .checked i {
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  footer button {
+    padding: 0.5rem 3.5rem;
+  }
+}
