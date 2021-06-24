@@ -11,10 +11,6 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #fff;
 }
-/* main {
-  display: grid;
-  grid-template-columns: 70% 30%;
-} */
 
 h1,
 h2,
@@ -28,11 +24,13 @@ left part
 */
 .left-part {
   background: #23252f;
+  height: 110%;
 }
 .left-container {
   width: 90%;
   margin: 0 auto;
   padding: 4rem 0;
+  max-width: 720px;
 }
 
 /* title */
@@ -80,6 +78,17 @@ input::placeholder {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.select {
+  color: #fff;
+}
+.select select {
+  color: #fff;
+}
+
+textarea {
+  height: 8rem;
+}
+
 .special-input {
   margin-bottom: 2rem;
 }
@@ -94,6 +103,10 @@ input::placeholder {
 }
 .special-input input:checked + label::before {
   background: rgba(255, 255, 255, 0.8);
+}
+
+label::before {
+  transition: all 0.2s linear;
 }
 
 .btn-input input {
@@ -112,3 +125,113 @@ input::placeholder {
   border-color: #fff;
   color: #fff;
 }
+
+/* 
+right part 
+*/
+.right-part {
+  background: #2b2d38;
+  height: 110%;
+}
+.right-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  max-width: 720px;
+}
+
+/* contact */
+
+.contact p {
+  font-size: 18px;
+}
+.icons {
+  display: grid;
+  max-width: fit-content;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+.icons i {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* guest and host */
+.guest h4,
+.host h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 6px;
+}
+.single-guest,
+.hosted {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.info {
+  margin-left: 10px;
+}
+.info h5 {
+  font-size: 16px;
+}
+.info p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.host {
+  margin-top: 4rem;
+}
+
+/* 1040px */
+@media screen and (min-width: 1040px) {
+  main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .left-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0rem 4rem 10rem;
+    max-width: 10400px;
+  }
+  .right-container {
+    padding-left: 4rem;
+    max-width: 1040px;
+  }
+  .right-part {
+    display: grid;
+    align-items: center;
+  }
+  .title .date {
+    font-size: 16px;
+  }
+  .title h1 {
+    font-size: 2rem;
+  }
+  .title p {
+    font-size: 18px;
+  }
+  .title h2 {
+    font-size: 1.5rem;
+  }
+  .single-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .single-input input,
+  select,
+  textarea {
+    padding: 1rem;
+  }
+  .btn-input input {
+    padding: 1.5rem 4rem;
+  }
+}
+
+/* coller à droite la parite de droite */
+/* modifier le select */
