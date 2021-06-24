@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>UI Design 6</title>
+  </head>
+  <body>
+    <main>
+      <!-- left part -->
+      <div class="left-part">
+        <div class="left-container">
+          <!-- title -->
+          <div class="title">
+            <p class="date">March 17, 2021 12:00</p>
+            <h1>The help of Augmented Reality and Holograms.</h1>
+            <p>
+              Use Augmented Reality to keep students engaged and provide
+              detailed explanations of models and course material. In a 3D, AR
+              Lab, students can pinch, zoom, and rotate equipment related to the
+              course, for a fully immersive learning experience
+            </p>
+            <h2>Join the event</h2>
+          </div>
+
+          <!-- form -->
+          <form action="#">
+            <!-- single form -->
+            <div class="single-form">
+              <div class="single-input">
+                <label for="fname">First name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Enter your first name"
+                />
+              </div>
+              <div class="single-input">
+                <label for="lname">Last name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Enter your last name"
+                />
+              </div>
+            </div>
+
+            <!-- single form -->
+            <div class="single-form">
+              <div class="single-input">
+                <label for="email">Business email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="single-input">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="What is your job title?"
+                />
+              </div>
+            </div>
+
+            <!-- single form -->
+            <div class="single-form">
+              <div class="single-input">
+                <label for="company">Company name</label>
+                <input
+                  type="text"
+                  name="company"
+                  id="company"
+                  placeholder="Where do you work?"
+                />
+              </div>
+
+              <!-- single form -->
+              <div class="single-input">
+                <label for="size">Company size</label>
+                <select name="size" id="size">
+                  <option value="">Select</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="big">Big</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- single form -->
+            <div class="single-input">
+              <label for="text">What are you hoping to learn about?</label>
+              <textarea
+                name="text"
+                id="text"
+                cols="30"
+                rows="10"
+                placeholder="Where do you work?"
+              ></textarea>
+            </div>
+
+            <!-- single form -->
+            <div class="special-input">
+              <input type="checkbox" name="check" id="check" />
+              <label for="check"
+                >I would like to receive emails about futur webinars</label
+              >
+            </div>
+
+            <!-- single form -->
+            <div class="btn-input">
+              <input type="submit" value="Register for this event" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- right part -->
+      <div class="right-part">
+        <div class="right-container">
+          <div class="contact">
+            <p>Share</p>
+            <div class="icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="guest">
+            <h4>guests</h4>
+            <!-- single guest -->
+            <div class="single-guest">
+              <img src="./img/img-1.png" alt="" />
+              <div class="info">
+                <h5>Lisa Alvin</h5>
+                <p>Cofounder, Jea</p>
+              </div>
+            </div>
+            <!-- single guest -->
+            <div class="single-guest">
+              <img src="./img/img-2.png" alt="" />
+              <div class="info">
+                <h5>Jenny Pick</h5>
+                <p>Head of Edeucation, Jea</p>
+              </div>
+            </div>
+            <!-- single guest -->
+            <div class="single-guest">
+              <img src="./img/img-3.png" alt="" />
+              <div class="info">
+                <h5>Peter Scott</h5>
+                <p>Founder, Jea</p>
+              </div>
+            </div>
+          </div>
+          <div class="host">
+            <h4>hosted by</h4>
+            <div class="hosted">
+              <img src="./img/img-4.png" alt="" />
+              <div class="info">
+                <h5>Josh Jacob</h5>
+                <p>Educator, Web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
