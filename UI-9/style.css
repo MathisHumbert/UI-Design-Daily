@@ -25,7 +25,7 @@ font-family: 'Mulish', sans-serif;
 
 .show {
   display: block;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 }
 
 @media screen and (min-width: 1080px) {
@@ -60,6 +60,7 @@ li {
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  padding: 12px 2rem;
 }
 
 h1 {
@@ -70,6 +71,17 @@ h1 {
 h2 {
   font-size: 24px;
   font-family: 'Merriweather', serif;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1rem;
+}
+p {
+  font-family: 'Poppins', sans-serif;
+}
+.first-h2 {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
 }
 
 /* header / nav */
@@ -192,9 +204,6 @@ settings
 public profile 
 */
 /* info */
-.info {
-  padding: 4rem 0 2rem 0;
-}
 .info-flex {
   display: flex;
   align-items: center;
@@ -205,19 +214,12 @@ public profile
   flex-flow: column;
   gap: 1rem;
 }
-.info h2 {
-  margin-bottom: 1rem;
-  font-size: 24px;
-  font-family: 'Merriweather', serif;
-}
 .info img {
   width: 168px;
   border: 8px solid #efefff;
   border-radius: 50%;
 }
-.info .btn {
-  padding: 12px 1.5rem;
-}
+
 .white {
   background: transparent;
   color: #202142;
@@ -229,7 +231,7 @@ form {
   display: grid;
   gap: 1rem;
 }
-input,
+input:not(.input-checkbox),
 textarea {
   width: 100%;
   padding: 1rem;
@@ -239,7 +241,7 @@ textarea {
   font-size: 16px;
   color: #202142;
 }
-input::placeholder,
+input::placeholder:not(.input-checkbox),
 textarea::placeholder {
   color: #202142;
   font-family: 'Poppins', sans-serif;
@@ -287,6 +289,78 @@ textarea {
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
+.add a {
+  color: #201ccd;
+}
 
-@media screen and (min-width: 1080px) {
+/* 
+account settings
+*/
+.settings-flex {
+  display: grid;
+  gap: 2rem;
+}
+.setting-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.single-setting {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #efefff;
+}
+.last {
+  border-bottom: none;
+}
+.single-setting button {
+  width: fit-content;
+}
+.special-link {
+  color: #201ccd;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.btn-inputs {
+  display: flex;
+  gap: 2rem;
+}
+.btn-input {
+  width: 100%;
+}
+.red {
+  color: #ee4878;
+}
+
+/* 
+notifications
+ */
+.notifications-flex {
+  display: grid;
+  gap: 1.5rem;
+}
+.single-notif h2 {
+  margin-bottom: 1.5rem;
+}
+.email-notif {
+  display: grid;
+  gap: 1rem;
+}
+
+/* checkbox */
+.checkbox {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.single-checkbox {
+  display: flex;
+  gap: 10px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 350px;
+  gap: 1rem;
 }

@@ -13,10 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,22 +63,23 @@
 
       <!-- section -->
       <!-- main container -->
-        <div class="main">
-      <section class="section-center">
-        <!-- settings -->
-        <div class="settings">
-          <h1>Settings</h1>
-          <ul>
-            <li class="active"><a href="">Public profile</a></li>
-            <li><a href="">Acount settings</a></li>
-            <li><a href="">Notifications</a></li>
-          </ul>
-        </div>
+      <main class="main">
+        <section class="section-center">
+          <!-- settings -->
+          <div class="settings">
+            <h1>Settings</h1>
+            <ul>
+              <li class="active"><a>Public profile</a></li>
+              <li><a href="">Acount settings</a></li>
+              <li><a href="">Notifications</a></li>
+            </ul>
+          </div>
+          <!-- page container -->
           <!-- public profile -->
-          <div class="page-container show" data-id="public">
+          <div class="page-container show" data-id="Public profile">
             <!-- info -->
             <div class="info">
-              <h2>Public profile</h2>
+              <h2 class="first-h2">Public profile</h2>
               <div class="info-flex">
                 <img src="./img/small-face.png" alt="" />
                 <div class="btn-container">
@@ -88,6 +88,7 @@
                 </div>
               </div>
             </div>
+
             <!-- form -->
             <div class="form">
               <form action="#">
@@ -112,6 +113,7 @@
                     />
                   </div>
                 </div>
+
                 <!-- input -->
                 <div class="single-input">
                   <label for="mail">Email</label>
@@ -122,6 +124,7 @@
                     placeholder="email@gmail.com"
                   />
                 </div>
+
                 <!-- input -->
                 <div class="single-input">
                   <label for="job">Profession</label>
@@ -132,6 +135,7 @@
                     placeholder="Web Developer"
                   />
                 </div>
+
                 <!-- input -->
                 <div class="single-input">
                   <label for="bio">Bio</label>
@@ -145,6 +149,8 @@
                 </div>
               </form>
             </div>
+
+            <!-- presence -->
             <div class="presence">
               <h2>Online presence</h2>
               <div class="single-presence">
@@ -157,12 +163,132 @@
               </div>
               <div class="add">
                 <i class="fas fa-plus"></i>
-                <p>Add other</p>
+                <a>Add other</a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+
+          <!-- page container -->
+          <!-- account settings -->
+          <div class="page-container" data-id="Acount settings">
+            <h2 class="first-h2">Account settings</h2>
+            <div class="settings-flex">
+            <!-- single setting -->
+            <div class="single-setting">
+              <h2>Email address</h2>
+              <div class="setting-flex">
+                <p>Your email address is <strong>email@gmail.com</strong></p>
+                <a class="special-link">Change</a>
+              </div>
+            </div>
+            <!-- single setting -->
+            <div class="single-setting">
+              <div class="setting-flex">
+                <h2>Password</h2>
+                <a class="special-link">Hide</a>
+              </div>
+              <div class="btn-inputs">
+                <div class="btn-input">
+                  <label for="new">New password</label>
+                  <input
+                    type="password"
+                    name="new"
+                    id="new"
+                    placeholder="**********"
+                  />
+                </div>
+                <div class="btn-input">
+                  <label for="current">Current password</label>
+                  <input
+                    type="password"
+                    name="current"
+                    id="current"
+                    placeholder="**********"
+                  />
+                </div>
+              </div>
+              <p>
+                Cant remember yout current password? <a class="special-link">Reset your password</a>
+              </p>
+              <button class="btn">Save password</button>
+            </div>
+            <!-- single setting -->
+            <div class="single-setting last">
+              <h2>Delete account</h2>
+              <div class="text">
+                <p>Would you like to delete your account?</p>
+                <p>
+                  This account contains 1388 posts. Deleting your account will
+                  remove all the content associated with it.
+                </p>
+              </div>
+              <a class="red special-link">I want to delete my account</a>
+            </div>
+            </div>
+          </div>
+          <!-- page container -->
+          <!-- account settings -->
+          <div class="page-container" data-id="Notifications">
+            <h2 class="first-h2">Notifications</h2>
+            <div class="notifications-flex">
+              <!-- singlie notif -->
+              <div class="single-notif">
+                <h2>Email notification</h2>
+                <div class="email-notif">
+                  <div>
+                  <h3>Weekly newsletter</h3>
+                  <p>A small text about what the newsletters might contain.</p>
+                  </div>
+                <div class="check"></div>
+                </div>
+                <div class="email-notif">
+                  <div>
+                  <h3>Account summary</h3>
+                  <p>A small text about what the newsletters might contain.</p>
+                  </div>
+                <div class="check"></div>
+                </div>
+                
+              </div>
+              <!-- singlie notif -->
+              <div class="single-notif">
+                <h2>Website notifications</h2>
+                <div class="checkbox">
+                  <!-- single checkbox -->
+                  <div class="single-checkbox">
+                    <input type="checkbox" name="follower" id="follower" class="input-checkbox">
+                    <label for="follower" >New follower</label>
+                  </div>
+                  <!-- single checkbox -->
+                  <div class="single-checkbox">
+                    <input type="checkbox" name="like" id="like" class="input-checkbox">
+                    <label for="like" >Post like</label>
+                  </div>
+                  <!-- single checkbox -->
+                  <div class="single-checkbox">
+                    <input type="checkbox" name="followed" id="followed" class="input-checkbox">
+                    <label for="followed" >Someone you followed posted</label>
+                  </div>
+                  <!-- single checkbox -->
+                  <div class="single-checkbox">
+                    <input type="checkbox" name="colletion" id="colletion" class="input-checkbox">
+                    <label for="colletion" >Post added to collection</label>
+                  </div>
+                  <!-- single checkbox -->
+                  <div class="single-checkbox">
+                    <input type="checkbox" name="downloaded" id="downloaded" class="input-checkbox">
+                    <label for="downloaded" >Post downloaded</label>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div class="buttons">
+                  <button class="btn blue">Save changes</button>
+                  <button class="btn white">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
   </body>
 </html>
