@@ -68,10 +68,10 @@
           <!-- settings -->
           <div class="settings">
             <h1>Settings</h1>
-            <ul>
-              <li class="active"><a>Public profile</a></li>
-              <li><a href="">Acount settings</a></li>
-              <li><a href="">Notifications</a></li>
+            <ul class="list-container">
+              <li class="list active"><a>Public profile</a></li>
+              <li class="list"><a>Acount settings</a></li>
+              <li class="list"><a>Notifications</a></li>
             </ul>
           </div>
           <!-- page container -->
@@ -235,20 +235,23 @@
               <div class="single-notif">
                 <h2>Email notification</h2>
                 <div class="email-notif">
-                  <div>
+                  <div class="notif-text">
                   <h3>Weekly newsletter</h3>
                   <p>A small text about what the newsletters might contain.</p>
                   </div>
-                <div class="check"></div>
+                  <div class="toggle-container">
+                  <i class="fas fa-circle"></i>
+                  </div>
                 </div>
                 <div class="email-notif">
-                  <div>
+                  <div class="notif-text">
                   <h3>Account summary</h3>
                   <p>A small text about what the newsletters might contain.</p>
                   </div>
-                <div class="check"></div>
+                  <div class="toggle-container on">
+                  <i class="fas fa-circle"></i>
+                  </div>
                 </div>
-                
               </div>
               <!-- singlie notif -->
               <div class="single-notif">
@@ -256,17 +259,17 @@
                 <div class="checkbox">
                   <!-- single checkbox -->
                   <div class="single-checkbox">
-                    <input type="checkbox" name="follower" id="follower" class="input-checkbox">
+                    <input type="checkbox" name="follower" id="follower" class="input-checkbox" checked>
                     <label for="follower" >New follower</label>
                   </div>
                   <!-- single checkbox -->
                   <div class="single-checkbox">
-                    <input type="checkbox" name="like" id="like" class="input-checkbox">
+                    <input type="checkbox" name="like" id="like" class="input-checkbox" >
                     <label for="like" >Post like</label>
                   </div>
                   <!-- single checkbox -->
                   <div class="single-checkbox">
-                    <input type="checkbox" name="followed" id="followed" class="input-checkbox">
+                    <input type="checkbox" name="followed" id="followed" class="input-checkbox" checked>
                     <label for="followed" >Someone you followed posted</label>
                   </div>
                   <!-- single checkbox -->
@@ -290,5 +293,7 @@
           </div>
         </section>
       </main>
+
+      <script src="./app.js"></script>
   </body>
 </html>

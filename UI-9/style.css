@@ -168,6 +168,7 @@ settings
 .settings ul {
   display: grid;
   gap: 1rem;
+  cursor: pointer;
 }
 .settings a {
   border: 1px solid transparent;
@@ -344,8 +345,34 @@ notifications
   margin-bottom: 1.5rem;
 }
 .email-notif {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.notif-text {
+  max-width: 300px;
+}
+.toggle-container {
+  border: 1px solid red;
+  border-radius: 26px;
+  width: 5rem;
+  padding: 4px;
+  background: transparent;
+  color: #a4a4cb;
+  border: 2px solid #a4a4cb;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.on {
+  background: #ff6a95;
+  border: 2px solid hsl(343, 100%, 90%);
+}
+.toggle-container i {
+  font-size: 2rem;
+}
+.on i {
+  transform: translateX(100%);
+  color: #fff;
 }
 
 /* checkbox */
@@ -363,4 +390,29 @@ notifications
   grid-template-columns: 1fr 1fr;
   max-width: 350px;
   gap: 1rem;
+}
+.checkbox {
+  display: grid;
+  gap: 1rem;
+}
+
+input[type='checkbox'].input-checkbox {
+  display: none;
+}
+input[type='checkbox'].input-checkbox + label::before {
+  content: '';
+  border: 1px solid #a4a4cb;
+  padding: 2px 12px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+input[type='checkbox'].input-checkbox:checked + label::before {
+  background-color: #ff6a95;
+  border-color: #ff6a95;
+}
+
+@media screen and (min-width: 1080px) {
+  .notif-text {
+    max-width: 600px;
+  }
 }
